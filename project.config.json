@@ -1,13 +1,85 @@
 {
-  "miniprogramRoot": "./dist",
+  "miniprogramRoot": "dist/",
   "projectname": "taro-v-demo",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "description": "taro的demo",
-  "appid": "touristappid",
+  "appid": "wxc5f96457e8746bf8",
   "setting": {
     "urlCheck": true,
     "es6": false,
+    "enhance": false,
     "postcss": false,
-    "minified": false
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
-  "compileType": "miniprogram"
+  "libVersion": "2.11.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "compileType": "miniprogram",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "suffix",
+        "value": ".vue"
+      },
+      {
+        "type": "prefix",
+        "value": "test-"
+      }
+    ]
+  },
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "v-demo-templete",
+          "pathName": "pages/v-demo-templete/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "原生page页面",
+          "pathName": "pages/o-weapp/index",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

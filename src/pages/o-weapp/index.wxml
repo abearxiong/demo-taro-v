@@ -1,0 +1,7 @@
+<!-- dist/pages/o/index.wxml -->
+<text>dist/pages/o/index.wxml</text>
+<view wx:for="{{arr}}" wx:key="index">
+  <view>{{index}}</view>
+</view>
+<button bindtap="setIsShow">显示/隐藏</button>
+<view wx:if="{{isShow}}">配置if内容</view>

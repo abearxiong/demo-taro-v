@@ -13,7 +13,8 @@ declare module "*.styl";
 
 declare namespace JSX {
     interface IntrinsicElements {
-        'import': React.DetailedHTMLProps<React.EmbedHTMLAttributes<HTMLEmbedElement>, HTMLEmbedElement>
+        // 'import': React.DetailedHTMLProps<React.EmbedHTMLAttributes<HTMLEmbedElement>, HTMLEmbedElement>
+        [key: string]: any
     }
 }
 
@@ -23,4 +24,15 @@ declare const process: {
     TARO_ENV: 'weapp' | 'swan' | 'alipay' | 'h5' | 'rn' | 'tt' | 'quickapp' | 'qq' | 'jd';
     [key: string]: any;
   }
+}
+
+declare const wx: any;
+
+interface SimpleObject {
+  [key: string]: any;
+  [key: number]: any;
+}
+interface Window {
+  [key: number]: any;
+  [key: string]: any;
 }
