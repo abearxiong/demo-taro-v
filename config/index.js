@@ -13,7 +13,7 @@ const config = {
   },
   sourceRoot: "src",
   outputRoot: "dist",
-  plugins: [],
+  plugins: [path.resolve(__dirname, "..", "plugin/plugin-demo")],
   defineConstants: {},
   // uglify: {
   //   enable: false,

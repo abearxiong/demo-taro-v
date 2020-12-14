@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start": "npm run dev:weapp",
-		"build": "npm run build:weapp",
-		"dev": "npm run dev:weapp",
+    "build": "npm run build:weapp",
+    "dev": "npm run dev:weapp",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -40,10 +40,11 @@
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.0.18",
     "@tarojs/runtime": "3.0.18",
+    "@tarojs/service": "^3.0.18",
     "@tarojs/taro": "3.0.18",
+    "@types/qs": "^6.9.5",
     "dayjs": "^1.9.7",
     "qs": "^6.9.4",
-    "@types/qs": "^6.9.5",
     "taro-axios": "^1.1.1",
     "vue": "^3.0.0-beta.15",
     "vuex": "^4.0.0-beta.2"
