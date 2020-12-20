@@ -1,22 +1,29 @@
 <template>
   <view class="index">
-    <!-- <NumberDisplay/>
-    <NumberSubmit/> -->
+    页面
+    <view>
+      <view v-for="(item, index) in arr" :key="index">{{ item }}</view>
+    </view>
+    <ModalBlank> 2333 </ModalBlank>
   </view>
 </template>
 
-<script>
-import NumberDisplay from '../../components/NumberDisplay.vue'
-import NumberSubmit from '../../components/NumberSubmit.vue'
-//
-export default {
-  name: 'Index',
+<script lang="ts">
+import ModalBlank from "@/components/modal/ModalBlank.vue";
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "Index",
   components: {
-    // NumberDisplay,
-    // NumberSubmit
-  }
-}
+    ModalBlank,
+  },
+  setup() {
+    const arr = Array.from({ length: 100 }, (_, index) => index + 1);
+    console.log("arr", arr);
+    return {
+      arr,
+    };
+  },
+});
 </script>
 
-<style>
-</style>
+<style></style>

@@ -15,13 +15,14 @@ const config = {
   outputRoot: "dist",
   plugins: [path.resolve(__dirname, "..", "plugin/plugin-demo")],
   defineConstants: {},
+  // 压缩
   // uglify: {
   //   enable: false,
   //   config: {}
   // },
   copy: {
     patterns: [
-      { from: "src/components", to: "dist/components", ignore: "*.vue" },
+      // { from: "src/components", to: "dist/components", ignore: "*.vue" },
     ],
     options: {},
   },
@@ -36,6 +37,14 @@ const config = {
     "@/images": path.resolve(__dirname, "..", "src/images"),
   },
   mini: {
+    // px不转换的
+    pxtransform: {
+      enable: true,
+      config: {},
+      selectorBlackList: [
+        /^.van-.*?$/, 
+      ]
+    },
     postcss: {
       pxtransform: {
         enable: true,

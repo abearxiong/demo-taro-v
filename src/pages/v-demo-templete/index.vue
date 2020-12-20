@@ -49,7 +49,9 @@ const store = createStore({
 export default defineComponent({
   setup(props, ctx) {
     console.log("props 组件使用", props, ctx);
+    
     const count = ref(1);
+    
     const countMoney = computed(() => {
       return count.value.toFixed(2) + "元";
     });
